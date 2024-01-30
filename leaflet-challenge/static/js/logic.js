@@ -133,36 +133,3 @@ L.control
     .layers(basemaps, overlays)
     .addTo(myMap);
 
-/* // add legend to the map
-let legend = L.control({
-    position: "bottomright"
-});
-
-// add properties for legend
-legend.onAdd = function(){
-    // make div for the legend to appear in page
-    let div = L.DomUtil.create("div", "info legend");
-
-    // set up the intervals for the legend
-    let intervals = [-10, 10, 30, 50, 70, 90];
-    let colors = [
-        "green",
-        "#cafc03",
-        "#fcad03",
-        "#fc8403",
-        "#fc4903",
-        "red" 
-    ];
-
-    // loop through intervals and colors and generate a label with square for each interval
-    for(var i = 0; i < intervals.length; i++)
-    {
-        // inner html that sets square for interval and label
-        div.innerHTML += 
-        "<i style='background: " + colors[i] + "'></i> " + intervals[i] + (intervals[i + 1] ? "&ndash;" + intervals[i + 1] + "km<br>" : "+");
-    }
-    return div;
-};
- // add legend to map
- legend.addTo(myMap);
- */
